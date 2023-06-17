@@ -3,7 +3,7 @@ import "../src/style/LandingPage.css";
 import './App.css';
 import Intro from "./components/Intro";
 import NavigationBar from './components/NavigationBar';
-import SuperHero from "./components/SuperHero";
+import SuperHero from "./components/Trending";
 function App() {
   return (
     <div>
