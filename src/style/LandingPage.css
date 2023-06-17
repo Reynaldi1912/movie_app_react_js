@@ -1,0 +1,18 @@
+.myBG{
+    height: 100vh;
+    background: url('../assets/bg/background.jpg');
+    background-size: cover;
+}
+
+.intro{
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    text-shadow: 2px 2px black;
+    letter-spacing: 3px;
+}

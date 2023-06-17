@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { Container } from "react-bootstrap";
+import "../src/style/LandingPage.css";
 import './App.css';
-
+import Intro from "./components/Intro";
+import NavigationBar from './components/NavigationBar';
+import SuperHero from "./components/SuperHero";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    {/* Intro Section */}
+      <div className='myBG border'>
+        <NavigationBar />
+        <Intro />
+      </div>
+    {/* End Of Intro Section */}
+
+    {/* SuperHero Section */}
+    <div class="bg-dark">
+      <Container className="p-5">
+        <SuperHero />
+      </Container>
+    </div>
+    {/* End Of SuperHero Section */}
     </div>
   );
 }
